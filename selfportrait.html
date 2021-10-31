@@ -1,0 +1,548 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation test</title>
+	
+	<style>
+		body{
+			height:1600px;
+		}
+		.square {
+			width: 350px;
+			height: 308px;
+			background-color: #FCE7E5;
+			position:absolute;
+			top: 500px;
+			left: 800px;
+			border-radius: 65px;
+			z-index:0;
+		}
+		.eyebrow1{
+			width:63px;
+			height: 8px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 640px;
+			left: 860px;
+			z-index: 7;
+			
+			animation-name: eyebrow1;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			
+		}
+		.eyebrow2{
+			width:63px;
+			height: 8px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 640px;
+			left: 1030px;
+			z-index: 7;
+			
+			animation-name: eyebrow2;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.uppereyelid1{
+			width: 48px;
+			height: 26px;
+			background-color: #FCE7E5;
+			top: 630px;
+			left: 860px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(-25deg);
+			
+			animation-name: uppereyelid;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.uppereyelid2{
+			width: 48px;
+			height: 26px;
+			background-color: #FCE7E5;
+			top: 630px;
+			left: 1043px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(25deg);
+			
+			animation-name: uppereyelid2;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			
+		}
+		
+		.lowereyelid1{
+			width: 48px;
+			height: 26px;
+			background-color: #FCE7E5;
+			top: 690px;
+			left: 865px;
+			position: absolute;
+			z-index: 6;
+			
+			animation-name: lowereyelid;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.lowereyelid2{
+			width: 48px;
+			height: 26px;
+			background-color: #FCE7E5;
+			top: 690px;
+			left: 1037px;
+			position: absolute;
+			z-index: 6;
+			
+			animation-name: lowereyelid2;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+
+			
+		.circle{
+			width: 186px;
+			height: 186px;
+			border-radius: 186px; 
+			position: absolute;
+			background-color: #FCE7E5;
+			top: 770px;
+			left: 885px;
+			z-index:0;
+		}
+		.hcurl1{
+			width: 178px;
+			height: 178px;
+			border-radius: 50%;
+			box-shadow: 0px -60px 0 0 #1F1812;
+			top: 430px;
+			left: 750px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(120deg);
+		}
+		.hcurl2{
+			width: 178px;
+			height: 178px;
+			border-radius: 50%;
+			box-shadow: 0px -60px 0 0 #1F1812;
+			top: 370px;
+			left: 710px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(148deg);
+		}
+		.hcurl3{
+			width: 178px;
+			height: 178px;
+			border-radius: 50%;
+			box-shadow: 0px -60px 0 0 #1F1812;
+			top: 420px;
+			left: 690px;
+			position: absolute;
+			z-index: -3;
+			transform: rotate(148deg);
+		}
+		.hcurl4{
+			width: 178px;
+			height: 178px;
+			border-radius: 50%;
+			box-shadow: 0px -60px 0 0 #1F1812;
+			top: 460px;
+			left: 690px;
+			position: absolute;
+			z-index: -3;
+			transform: rotate(148deg);
+		}
+		.hcurl5{
+			width: 178px;
+			height: 178px;
+			border-radius: 50%;
+			box-shadow: 0px -30px 0 0 #1F1812;
+			top: 410px;
+			left: 815px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(130deg);
+		}
+		.hcurl6{
+			width: 185px;
+			height: 185px;
+			border-radius: 50%;
+			box-shadow: 0px -58px 0 0 #1F1812;
+			top: 440px;
+			left: 840px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(100deg);
+		}
+		.hcurl7{
+			width: 185px;
+			height: 185px;
+			border-radius: 50%;
+			box-shadow: 0px -58px 0 0 #1F1812;
+			top: 465px;
+			left: 910px;
+			position: absolute;
+			z-index: 6;
+			transform: rotate(67deg);
+		}
+		.ear1{
+			width: 88px;
+			height: 88px;
+			border-radius: 50%;
+			background-color:#FCE7E5;
+			position: absolute;
+			top: 650px;
+			left: 750px;
+			z-index: -1;
+		}
+
+		.ear2{
+			width: 88px;
+			height: 88px;
+			border-radius: 50%;
+			background-color:#FCE7E5;
+			position: absolute;
+			top: 650px;
+			left: 1115px;
+			z-index: -2;
+		}
+		.earhole1{
+			position: absolute;
+			width:58px;
+			height:58px;
+			border-radius:58px;
+			background-color: #F0CCC2;
+			top: 665px;
+			left: 765px;
+			z-index:-1;
+		}
+		.earhole2{
+			position: absolute;
+			width:58px;
+			height:58px;
+			border-radius:58px;
+			background-color: #F0CCC2;
+			top: 665px;
+			left: 1130px;
+			z-index:-1;
+		}
+		.mouth{
+			width: 144px;
+			height: 144px;
+			border-radius: 50%;
+			background-color: black;
+			position: absolute;
+			top: 755px;
+			left: 905px;
+			z-index: 3;
+			
+		}
+		.mouthblock{
+			width: 180px;
+			height: 100px;
+			position: absolute;
+			top: 700px;
+			left: 886px;
+			background-color: #FCE7E5;
+			z-index: 3;
+			
+			animation-name: mouthblock;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.jaw{
+			width: 180px;
+			height: 140px;
+			position: absolute;
+			z-index:5;
+			border-radius: 50%;
+			box-shadow: 0px -70px 0 0 #FCE7E5;
+			top: 740px;
+			left: 887px;
+			transform: rotate(180deg);
+			
+			animation-name: jaw;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			
+		}
+				
+		.tongue{
+			width: 84px;
+			height: 84px;
+			border-radius: 84px;
+			background-color: #7D4B4B;
+			top: 830px;
+			left: 935px;
+			position: absolute;
+			z-index: 4; 
+			
+		}
+		.c1{
+			width: 275px;
+			height: 275px;
+			border-radius: 275px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 410px;
+			left: 770px;
+			z-index: -3;
+		}
+		.c2{
+			width: 275px;
+			height: 275px;
+			border-radius: 275px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 450px;
+			left: 930px;
+			z-index: -4;
+		}
+		.c2{
+			width: 275px;
+			height: 275px;
+			border-radius: 275px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 450px;
+			left: 930px;
+			z-index: -4;
+		}
+		
+		.c3{
+			width: 295px;
+			height: 295px;
+			border-radius: 275px;
+			background-color: #1F1812;
+			position: absolute;
+			top: 395px;
+			left: 840px;
+			z-index: -3;
+		}
+		
+		.eye1{
+			width: 31px;
+			height: 31px;
+			border-radius: 31px;
+			background-color: black;
+			position: absolute;
+			top: 658px;
+			left: 875px;
+			z-index: 3;
+		}
+		.eye2{
+			width: 31px;
+			height: 31px;
+			border-radius: 31px;
+			background-color: black;
+			position: absolute;
+			top: 658px;
+			left: 1045px;
+			z-index: 4;
+		}
+		.highlight1{
+			width: 11px;
+			height: 11px;
+			border-radius: 50%;
+			background-color: white;
+			top: 660px;
+			left: 880px;
+			position: absolute;
+			z-index: 5;
+		}
+		.highlight2{
+			width: 11px;
+			height: 11px;
+			border-radius: 50%;
+			background-color: white;
+			top: 660px;
+			left: 1050px;
+			position: absolute;
+			z-index: 5;
+		}
+		.br{
+			width:81px;
+			height:206px;
+			background-color: #FCE7E5;
+			top: 700px;
+			left: 1032px;
+			position: absolute;
+			border-radius: 25px;
+			transform: rotate(-149deg);
+			z-index:2;
+		}
+		
+		.br2{
+			width:81px;
+			height:206px;
+			background-color: #FCE7E5;
+			top: 700px;
+			left: 837px;
+			position: absolute;
+			border-radius: 25px;
+			transform: rotate(149deg);
+			z-index:2;
+		}		
+		
+		.t{
+		 	width: 57px;
+   		 	height: 149px;
+			position: absolute;
+   		 	background: #FCDCDB;
+  		 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			margin-top: 600px;
+			margin-left: 940px;                      
+			z-index: 3;
+		}
+		.m1{
+			width: 366px;
+			height: 366px;
+			position: absolute;
+			border-radius: 50%;
+			box-shadow: 0px -130px 0 0 #1F1812;
+			top: 550px;
+			left: 790px;
+		}
+		
+		@-webkit-keyframes lowereyelid {
+			
+			0%{	top: 690px;
+			left: 865px;
+			}
+			50%{top:680px;
+			}
+			
+			100%{top: 690px;
+			left: 865px;
+				
+			}
+		}
+		@-webkit-keyframes lowereyelid2 {
+			
+			0%{top: 690px;
+			left: 1037px;
+			}
+			50%{top: 680px;
+			}
+			100%{top: 690px;
+			left: 1037px;
+			}
+		}
+		
+		@-webkit-keyframes uppereyelid {
+			
+			0%{top: 630px;
+			left: 860px;
+			}
+			50%{top: 650px;
+			left: 860px;
+			}
+			
+			100%{top: 630px;
+			left: 860px;
+			}
+		}
+		@-webkit-keyframes uppereyelid2 {
+			
+			0%{top: 630px;
+			left: 1043px;
+			}
+			50%{top: 650px;
+			}
+			100%{top: 630px;
+			left: 1043px;
+			}
+		}
+		@-webkit-keyframes jaw {
+			0%{top: 740px;
+			left: 887px;}
+			50%{top: 720px;}
+			100%{top: 740px;
+			left: 887px;}
+			}
+		
+		@-webkit-keyframes mouthblock {
+			0%{top: 700px;
+			left: 886px;}
+			50%{top: 710px;}
+			100%{top: 700px;
+			left: 886px;}
+		}
+		@-webkit-keyframes eyebrow1{
+			0%{top: 640px;
+			left: 860px;
+			transform: rotate(-35deg)}
+			50%{top: 620px;
+			left: 850px;
+			transform: rotate(-35deg)}
+			100%{top: 640px;
+			left: 860px;
+			transform: rotate(-35deg)}
+		}
+		@-webkit-keyframes eyebrow2{
+			0%{top: 640px;
+			left: 1030px;
+			transform: rotate(35deg)}
+			50%{top: 620px;
+			left: 1030px;
+			transform: rotate(35deg)}
+			100%{top: 640px;
+			left: 1030px;
+			transform: rotate(35deg)}
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="square"></div>
+	<div class="eyebrow1"></div>
+	<div class="eyebrow2"></div>
+	<div class="uppereyelid1"></div>
+	<div class="uppereyelid2"></div>
+	<div class="lowereyelid1"></div>
+	<div class="lowereyelid2"></div>
+	<div class="circle"></div>
+	<div class="hcurl1"></div>
+	<div class="hcurl2"></div>
+	<div class="hcurl3"></div>
+	<div class="hcurl4"></div>
+	<div class="hcurl5"></div>
+	<div class="hcurl6"></div>
+	<div class="hcurl7"></div>
+	<div class="ear1"></div>
+	<div class="ear2"></div>
+	<div class="earhole1"></div>
+	<div class="earhole2"></div>
+	<div class="ear2"></div>
+	<div class="mouth"></div>
+	<div class="mouthblock"></div>
+	<div class="jaw"></div>
+	<div class="tongue"></div>
+	<div class="br"></div>
+	<div class="br2"></div>
+	<div class="t"></div>
+	<div class="c1"></div>	
+	<div class="c2"></div>	
+	<div class="c3"></div>
+	<div class="eye1"></div>
+	<div class="eye2"></div>
+	<div class="highlight1"></div>
+	<div class="highlight2"></div>
+	<div class="m1"></div>
+
+</body>
+</html>
