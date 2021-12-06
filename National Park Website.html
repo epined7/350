@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>National Park Website</title>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+</head>
+	
+<style>
+	body{
+	background-color:#8BE0F0;
+	width:1920px;
+	height:3630px;
+	margin:0px 0px 0px 0px;
+	overflow-x: 
+	
+	
+	}
+	.header{
+		height:575px;
+		width:1316px;
+		margin-left:302px;
+		margin-right:302px;	
+		margin-top:285px;
+		color: #F0FFF4;
+		
+	}
+	.visit{
+		height:65px;
+		width:100%;
+		font-size:45px;
+		position:relative;
+		display: flex;
+		justify-content: center;
+		font-family: 'Praise', cursive;
+	}
+	.y{
+		width:100%;
+		height:265px;		
+		font-size:320px;
+		letter-spacing: 9px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Staatliches', cursive;
+	}
+	.nationalpark{
+		height:90px;
+		width:100%;
+		font-size:80px;
+		display: flex;
+		justify-content: center;
+		font-family: 'Praise', cursive;
+		
+	}
+	.est{
+		height:27px;
+		width:100%;
+		font-size:20px;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		letter-spacing: .03rem;
+		font-family: 'Francois One', sans-serif;
+	}
+	.clouds{
+		position: absolute;
+		float:left;
+		width: 2303px;
+		margin-top: -500px;
+		margin-left: -85px;
+		z-index: 0;
+	}
+	
+	.lmountain{
+		width: 675px;
+		padding-top: 100px;
+		float: left;
+		position: absolute;
+		z-index: 2;
+	}
+	
+	.rmountain{
+		width: 890px;
+		float: left;
+		position: absolute;
+		z-index: 3;
+		padding-left: 1030px;	
+	}
+	
+	.cmountain{
+		width: 1333px;
+		float: left;
+		position: absolute;
+		z-index: 1;
+		padding-top: 380px;	
+	}
+	.svg{
+		width: 2000px;
+	}
+
+	.cabinv2{
+		position: absolute;
+		z-index:4;
+
+		width: 2400px;
+		margin-top: 2800px;
+		margin-left: -230px;
+	}
+	.text1{
+		position: absolute;
+		height: 200px;
+		width: 380px;
+		margin-top: 250px;
+		margin-left: 45px;
+		z-index: 11;
+	}
+	
+	.sqmileage{position: relative;
+		font-size:25px;
+		font-family: 'Francois One', sans-serif;
+		color: #F0FFF4;
+	}
+	.ll{position: relative;
+		font-size:25px;
+		margin-top:45px;
+		font-family: 'Francois One', sans-serif;
+		color: #F0FFF4;
+	}
+	
+	.threeposters{
+		width: 500px;
+		height: 1500px;
+		position: absolute;
+		margin-top: 650px;
+		margin-left: 170px;
+		z-index: 9;
+	}
+	.other{
+		height: 45px;
+		font-size:45px;
+		font-family: 'Francois One', sans-serif;
+		color:#F0FFF4;		
+	}
+	.posterheader{
+		font-size: 20px;
+		font-family: 'Francois One', sans-serif;
+		color:#F0FFF4;
+		letter-spacing: .07rem;
+		margin-bottom: 10px;
+	}
+	.sub3posters{
+		height: 420px;
+		width: 100%;
+		margin-top: 60px;
+	}
+	.e{ height: 400px;
+		position: relative;}
+	.a{height: 400px;
+		position: relative;}
+	.s{height: 400px;
+		position: relative;}
+	
+	
+	.text2{
+		width:695px;
+		height: 1600px;
+		margin-left: 1193px;
+		margin-top: 280px; 
+		position: absolute;
+		display: inline-block;
+		z-index:5;
+	}
+	.about{
+		height: 45px;
+		position: relative;
+		Font-size: 45px;
+		margin-bottom: 12px;
+		margin-right:15px;
+		margin-left:15px;
+		font-family: 'Francois One', sans-serif;
+		color:#F0FFF4;
+		line-height:2rem;
+	}
+	.paragraph{
+		margin-right:15px;
+		margin-left:15px;
+		height: 270px;
+		font-size: 22px;
+		position: relative;
+		font-family: 'Francois One', sans-serif;
+		color: #F0FFF4;
+		letter-spacing: 0.03rem;
+	}
+	.box{
+		height: 200px;
+		margin-right:45px;
+		margin-left:45px;
+		margin-top: 50px;
+	}
+
+	.header1{
+		height:40px;
+		width: 395px;
+		float:left;
+		margin-left: 210px;
+		position: relative;
+		font-size: 25px;
+		color:#F0FFF4;
+		font-family: 'Francois One', sans-serif;
+		letter-spacing: .07rem;
+	}
+	.subtext{
+		position: relative;
+		height: 150px;
+		width: 395px;
+		margin-left:210px;
+		float: left;
+		display: flex;	
+		color:#F0FFF4;
+		font-family: 'Francois One', sans-serif;
+		letter-spacing: .03rem;
+	}
+	.linkbox{
+		position: absolute;
+		z-index: 9;
+		margin-top: 2800px;
+		margin-left: 600px;
+		letter-spacing: .03rem;
+		font-size: 35px;
+		height: 400px;
+		width: 900px;
+
+	}
+	.linkheader{
+		display: flex;
+		justify-content: center;
+		height:12px;
+		width: 100%;
+		position: relative;
+		font-family: 'Francois One', sans-serif;
+		color: #F0FFF4;
+	}
+	.sources{
+		position: relative;
+		margin-top: 30px;
+		height: 50px;
+		font-size: 20px;
+		font-family: 'Francois One', sans-serif;
+		color: #F0FFF4;
+		letter-spacing: 0.02rem;
+		height:12px;
+		display: flex;
+		justify-content: center;
+	}
+	.bikesvg{
+		position:absolute;
+		height: 100px;
+		z-index: 11;
+		margin-left: 1280px;
+		margin-top: 660px;
+	}
+	.hikesvg{
+		position:absolute;
+		height: 100px;
+		z-index: 11;
+		margin-left: 1280px;
+		margin-top: 910px;
+	}
+	.campsvg{
+		position:absolute;
+		height: 100px;
+		z-index: 11;
+		margin-left: 1280px;
+		margin-top: 1160px;
+	}
+	.toursvg{
+		position:absolute;
+		height: 100px;
+		z-index: 11;
+		margin-left: 1280px;
+		margin-top: 1410px;
+	}
+	.starsvg{
+		position:absolute;
+		height: 140px;
+		z-index: 11;
+		margin-left: 1320px;
+		margin-top: 1660px;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="visit">Visit</div>
+		<div class="y">YOSEMITE</div>
+		<div class="nationalpark">National Park</div>
+		<div class="est">est 1890</div>
+	</div>
+	
+	
+	<div class="svg">	
+		<div class="clouds rellax" data-rellax-speed="1">
+			<img src="../../Desktop/Digital Media/National Parks/svgs/website/clouds.svg" alt="cloudsv1" class="clouds">
+		</div>
+		
+		<div class="cm rellax" data-rellax-speed="2">
+			<img src="../../Desktop/Digital Media/National Parks/svgs/website/center.svg" alt="centermountain"
+			class="cmountain">
+		</div>
+		<div class="lm rellax" data-rellax-speed="4">
+			<img src="../../Desktop/Digital Media/National Parks/svgs/website/leftmountain.svg" alt="leftmountain" class="lmountain">
+		</div>
+			
+		<div class="rm rellax" data-rellax-speed="3">
+			<img src="../../Desktop/Digital Media/National Parks/svgs/website/rightmountain.svg" alt="rightmountain" class="rmountain">
+		</div>
+		
+		<div class="cabin rellax" data-rellax-speed="6">
+			<img src="../../Desktop/Digital Media/National Parks/svgs/website/cabin v2.svg" alt="cabinv2" class="cabinv2">
+		</div>
+	</div>
+		
+		
+	<div class="text1">
+		<div class="sqmileage">1187 square miles</div>
+		<div class="ll">37.748837 N, -199.58723 E</div>
+	</div>
+		
+	<div class="threeposters">
+		
+		<div class="other">Other Parks</div>
+		
+		<div class="sub3posters">
+			<div class="posterheader"
+		    id="everglades">EVERGLADES</div>
+			<img src="../../Desktop/Digital Media/National Parks/3 Other Posters/everglades.jpg" class="e">
+		</div>
+		
+		<div class="sub3posters">
+			<div class="posterheader"
+		    id="acadia">ACADIA</div>
+			<div class="poster2">
+			<img src="../../Desktop/Digital Media/National Parks/3 Other Posters/Acadia-vio2.jpg" class="a">
+			</div>
+		</div>
+		
+		<div class="sub3posters">
+			<div class="posterheader"
+		    id="shenandoah">SHENANDOAH</div>
+			<div class="poster3">
+			<img src="../../Desktop/Digital Media/National Parks/3 Other Posters/shenandoah-poster.png" class="s">
+			</div>
+		</div>	
+		
+	</div>
+	<div class="text2">
+		
+		<div class="about">About Yosemite</div>
+		<div class="paragraph">Welcome to Yosemite National Park. Here you will explore the 1187 square mile landscapes filled with granite mountains, expansive forests, and beautiful waterfalls. Hike through and visit the spectacular sights Yosemite has to offer. Or maybe take a bike, or even a tour bus. Reserve a camp spot, and stargaze at night. Bring all the right gear and stay safe, we hope you will enjoy your visit!
+</div>
+	
+			
+			<div class="box">
+				<div class="header1" id="biking">BIKING</div>
+				<div class="subtext" id="bikingtext">Enjoy a nice bike ride through our 12 miles of bike paths. Or bike on our regular roadways.</div>
+			</div>
+		
+			<div class="box">
+				<div class="header1" id="hiking">HIKING</div>
+				<div class="subtext" id="hikingtext">Hike through the beautful trails, and see the vistas, granite mountains, and waterfalls.</div>
+			</div>
+		
+			<div class="box">
+				<div class="header1" id="camping">CAMPING</div>
+				<div class="subtext" id="campingtext">13 popular campgrounds. Reserve quick, first come first serve.</div>
+			</div>
+		
+			<div class="box">
+				<div class="header1" id="tour">TOUR GUIDES</div>
+				<div class="subtext" id="tourtext">Yosemite Hospitality offers bus tours year round. Get your tickets and see sights like the giant sequoias, Yosemite Valley, Glacier Point, and many more.</div>
+			</div>
+		
+			<div class="box">
+				<div class="header1" id="star">STARGAZING</div>
+				<div class="subtext" id="startext">Gaze at the stars in the peaceful nights at Yosemite.</div>
+			</div>
+	</div>
+	
+	<img src="../../Desktop/Digital Media/National Parks/svgs/website/bike.svg" class="bikesvg">
+	
+	<img src="../../Desktop/Digital Media/National Parks/svgs/website/hike.svg" class="hikesvg">
+	
+	<img src="../../Desktop/Digital Media/National Parks/svgs/website/camp.svg" class="campsvg">
+	
+	<img src="../../Desktop/Digital Media/National Parks/svgs/website/tour.svg" class="toursvg">
+	
+	<img src="../../Desktop/Digital Media/National Parks/svgs/website/star.svg" class="starsvg">
+	
+	<div class="linkbox">
+		<div class="linkheader">SOURCES</div>
+		<div class="sources">
+<ul>
+<p>Yosemite National Park (U.S. National Park Service) (nps.gov)</p>
+			
+<p>Yosemite National Park | Lodging, Camping, Attractions | Yosemite.com</p>
+			
+
+<p>9 Things You Didn’t Know About Yosemite National Park | U.S. Department of the Interior (doi.gov)</p>
+			
+
+<p>Yosemite Biking, Bike Trails - AllTrips (allyosemite.com)</p>
+</ul>
+
+	</div>
+	</div>
+
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+
+	
+</body>
+</html>
